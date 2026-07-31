@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>convertor</title>
+    <link rel="stylesheet" href="src/css/style.css">
+    <link rel="stylesheet" href="src/css/mobile.css">
+</head>
+
+<body>
+    <div class="anuncio">
+           <script>
+                atOptions = {
+                    'key' : '28b7e87f216dbeac4b8b75f83f56c45a',
+                    'format' : 'iframe',
+                    'height' : 600,
+                    'width' : 160,
+                    'params' : {}
+                };
+                </script>
+                <script src="https://www.highperformanceformat.com/28b7e87f216dbeac4b8b75f83f56c45a/invoke.js">
+            </script>
+        </div>
+    <main class="container">
+        <h1>Conversor de moeda</h1>
+        <form action="#" class="converter_form" id="converterForm">
+            <div class="currency-row">
+                <div class="currency-inp">
+                    <label for="amount">Valor</label>
+                    <input type="number" id="amount" placeholder="Digite o valor" step="0.1" min="0" id="amount" required>
+                </div>
+
+                <div class="currency_select">
+                    <label for="fromCurrency">De</label>
+                    <select id="fromCurrency" required>
+                        <option value="MZN" selected>MZN - Metical</option>
+                        <option value="USD">USD - Dolar americano</option>
+                        <option value="EUR">EUR - Euro</option>
+                        <option value="BRL">BRL - Real</option>
+                        <option value="GBP">GBP - Libras</option>
+                        <option value="JPY">JPY - Iene</option>
+                    </select>
+                </div>
+            </div>
+
+
+
+            <div class="currency-row">
+                <div class="currency-inp">
+                    <label for="convertedAmount">resultado</label>
+                    <input type="text" readonly placeholder="Valor convertido" id="convertedAmount">
+                </div>
+
+                <div class="currency_select">
+                    <label for="toCurrency">De</label>
+                    <select id="toCurrency" required>
+                        <option value="MZN">MZN - Metical</option>
+                        <option value="USD" selected>USD - Dolar americano</option>
+                        <option value="EUR">EUR - Euro</option>
+                        <option value="BRL">BRL - Real</option>
+                        <option value="GBP">GBP - Libras</option>
+                        <option value="JPY">JPY - Iene</option>
+                    </select>
+                </div>
+
+
+            </div>
+
+            <button type="submit" class="converter-btn" id="converterBTN">
+                <p>Converter moeda</p>
+            </button>
+            <div class="loading"> 
+                <div class="spiner"></div>
+                <p>Buscando cotação...</p>
+            </div>
+
+            <div class="result"></div>
+            <div class="error"></div>
+            <div class="info">
+                <p>Taxas atualizadas em tempo real</p>
+            </div>
+        </form>
+        <br>
+        <div class="anuncio">
+            <script>
+                atOptions = {
+                    'key' : '8a08f4e5aab77dc2f1e63b367a391b96',
+                    'format' : 'iframe',
+                    'height' : 50,
+                    'width' : 320,
+                    'params' : {}
+                };
+                </script>
+                <script src="https://www.highperformanceformat.com/8a08f4e5aab77dc2f1e63b367a391b96/invoke.js">
+            </script>
+        </div>
+    </main>
+    <div class="anuncio">
+        <script>
+            atOptions = {
+                'key' : '28b7e87f216dbeac4b8b75f83f56c45a',
+                'format' : 'iframe',
+                'height' : 600,
+                'width' : 160,
+                'params' : {}
+            };
+            </script>
+            <script src="https://www.highperformanceformat.com/28b7e87f216dbeac4b8b75f83f56c45a/invoke.js">
+        </script>
+    </div>
+</body>
+<script src="src/js/scripts.js"></script>
+</html>

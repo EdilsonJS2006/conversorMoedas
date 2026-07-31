@@ -1,0 +1,92 @@
+/* ===== VARIÁVEIS DE COR (mude aqui facilmente) ===== */
+:root {
+    --primary-color: #2563eb;       /* Azul principal (botão, destaques) */
+    --primary-hover: #1d4ed8;       /* Azul mais escuro (hover) */
+    --secondary-color: #64748b;     /* Cinza para textos secundários */
+    --bg-color: #f1f5f9;            /* Fundo da página */
+    --card-bg: #ffffff;             /* Fundo do formulário */
+    --text-color: #0f172a;          /* Cor do texto principal */
+    --border-color: #cbd5e1;        /* Cor das bordas */
+    --shadow-color: rgba(0,0,0,0.1);/* Sombra */
+    --success-color: #22c55e;       /* Verde para resultados positivos */
+    --error-color: #ef4444;         /* Vermelho para erros */
+    --spinner-color: #2563eb;       /* Cor do spinner */
+}
+/* ========================================================== */
+/* ===== RESPONSIVO – MOBILE (até 900px) ===== */
+@media (max-width: 900px) {
+    body {
+        padding: 0.8rem;
+        align-items: flex-start;
+        padding-top: 2rem;
+    }
+
+    .container {
+        padding: 1.5rem 1rem;
+        border-radius: 1rem;
+        box-shadow: 0 4px 12px var(--shadow-color);
+    }
+
+    h1 {
+        font-size: 1.5rem;
+        margin-bottom: 1.2rem;
+    }
+
+    .currency-row {
+        flex-direction: column;   /* empilha os campos */
+        gap: 0.8rem;
+    }
+
+    .currency-row > div {
+        flex: unset;
+        min-width: unset;
+        width: 100%;
+    }
+
+    input, select {
+        padding: 0.65rem 0.7rem;
+        font-size: 0.95rem;
+        border-radius: 0.7rem;
+    }
+
+    .converter-btn {
+        padding: 0.8rem;
+        font-size: 1rem;
+    }
+
+    .loading .spiner {
+        width: 34px;
+        height: 34px;
+    }
+
+    .result, .error {
+        padding: 0.8rem;
+        font-size: 0.95rem;
+    }
+
+    .info {
+        font-size: 0.75rem;
+        padding-top: 0.8rem;
+    }
+}
+
+/* ===== AJUSTES PARA TELAS MUITO PEQUENAS (ex: < 480px) ===== */
+@media (max-width: 480px) {
+    .container {
+        padding: 1rem 0.8rem;
+    }
+
+    h1 {
+        font-size: 1.3rem;
+    }
+
+    input, select {
+        padding: 0.6rem 0.6rem;
+        font-size: 0.9rem;
+    }
+
+    .converter-btn {
+        padding: 0.7rem;
+        font-size: 0.9rem;
+    }
+}
