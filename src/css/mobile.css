@@ -72,6 +72,9 @@
 
 /* ===== AJUSTES PARA TELAS MUITO PEQUENAS (ex: < 480px) ===== */
 @media (max-width: 480px) {
+    .anuncio{
+        display:none;
+    }
     .container {
         padding: 1rem 0.8rem;
     }
