@@ -43,6 +43,7 @@ body{
 }
 .add{
     width: 328px;
+    wrap: nowrap;
 }
 h1{
     color: #000;
